@@ -1,0 +1,9 @@
+int getAbsSum(std::vector<int> arr) {
+	int i=0,sun=0;
+	for (i=0;i<arr.size();i++){
+		if(arr[i]<0)
+			arr[i]*=-1;
+		sun+=arr[i];
+	}
+	return sun;
+}
